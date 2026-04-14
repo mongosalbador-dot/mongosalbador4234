@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>arquitectura94</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #1e1e2f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    width: 120px;
+}
+
+nav {
+    background: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.search-bar {
+    text-align: center;
+    margin: 20px;
+}
+
+.search-bar input {
+    padding: 8px;
+    width: 200px;
+}
+
+.search-bar button {
+    padding: 8px;
+    background: #25D366;
+    border: none;
+    color: white;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    background: white;
+    width: 230px;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.price {
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* VIDEO */
+.video {
+    text-align: center;
+    margin: 40px;
+}
+
+.video iframe {
+    width: 90%;
+    max-width: 600px;
+    height: 315px;
+}
+
+/* REDES */
+.social {
+    text-align: center;
+    margin: 30px;
+}
+
+.social a {
+    display: block;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="image_1_1768271102341.jpg">
+    <h1>arquitectura94</h1>
+    <p>El mejor lugar de componentes de computadora</p>
+</header>
+
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#">Productos</a>
+    <a href="#">Contacto</a>
+</nav>
+
+<div class="search-bar">
+    <input type="text" placeholder="Buscar productos...">
+    <button>Buscar</button>
+</div>
+
+<div class="products">
+
+    <div class="product">
+        <img src="descarga.jfif">
+        <h3>Ryzen 5</h3>
+        <p>Alto rendimiento</p>
+        <p class="price">$180</p>
+        <a href="https://wa.me/18494705105" class="btn">Comprar</a>
+    </div>
+
+    <div class="product">
+        <img src="descarga (1).jfif">
+        <h3>RTX 3060</h3>
+        <p>Gráficos potentes</p>
+        <p class="price">$350</p>
+        <a href="https://wa.me/18494705105" class="btn">Comprar</a>
+    </div>
+
+    <div class="product">
+        <img src="ssd (2).jfif">
+        <h3>SSD 1TB</h3>
+        <p>Alta velocidad</p>
+        <p class="price">$90</p>
+        <a href="https://wa.me/18494705105" class="btn">Comprar</a>
+    </div>
+
+    <div class="product">
+        <img src="fuente (23).jfif">
+        <h3>Fuente 750W</h3>
+        <p>Energía estable</p>
+        <p class="price">$70</p>
+        <a href="https://wa.me/18494705105" class="btn">Comprar</a>
+    </div>
+
+    <div class="product">
+        <img src="descarga (2).jfif">
+        <h3>Monitor 24"</h3>
+        <p>Full HD</p>
+        <p class="price">$150</p>
+        <a href="https://wa.me/18494705105" class="btn">Comprar</a>
+    </div>
+
+    <!-- NUEVOS COMPONENTES -->
+
+    <div class="product">
+        <img src="16gb ram.jfif">
+        <h3>RAM 16GB</h3>
+        <p>DDR4 alta velocidad</p>
+        <p class="price">$60</p>
+        <a href="https://wa.me/18494705105" class="btn">Comprar</a>
+    </div>
+
+    <div class="product">
+        <img src="mother.jfif">
+        <h3>Motherboard B550</h3>
+        <p>Compatible Ryzen</p>
+        <p class="price">$120</p>
+        <a href="https://wa.me/18494705105" class="btn">Comprar</a>
+    </div>
+
+    <div class="product">
+        <img src="gabinete.jfif">
+        <h3>Gabinete RGB</h3>
+        <p>Vidrio templado</p>
+        <p class="price">$80</p>
+        <a href="https://wa.me/18494705105" class="btn">Comprar</a>
+    </div>
+
+    <div class="product">
+        <img src="teclado.jfif">
+        <h3>Teclado Gamer</h3>
+        <p>RGB mecánico</p>
+        <p class="price">$45</p>
+        <a href="https://wa.me/18494705105" class="btn">Comprar</a>
+    </div>
+
+    <div class="product">
+        <img src="mouse.jfif">
+        <h3>Mouse Gamer</h3>
+        <p>Alta precisión</p>
+        <p class="price">$25</p>
+        <a href="https://wa.me/18494705105" class="btn">Comprar</a>
+    </div>
+
+</div>
+
+<!-- 🎥 VIDEO YOUTUBE -->
+<div class="video">
+    <h2>🔥 Mira nuestros productos en acción</h2>
+   <iframe width="560" height="315" 
+src="https://www.youtube.com/watch?v=bCAoQ8rwGMI" 
+frameborder="0" 
+allowfullscreen>
+</iframe>
+</div>
+
+<div class="social">
+    <a href="#">🔵 Facebook</a>
+    <a href="https://www.instagram.com/">📸 Instagram</a>
+    <a href="">🐦 X</a>
+    <a href="https://www.tiktok.com/search?q=pc%20rd&t=1776132961687">🎵 TikTok</a>
+    <a href="https://www.youtube.com/results?search_query=pc+gamer+barata+2025" target="_blank">🔴 YouTube</a>
+    <a href="https://wa.me/18494705105">📞 WhatsApp</a>
+</div>
+
+</body>
+</html>
